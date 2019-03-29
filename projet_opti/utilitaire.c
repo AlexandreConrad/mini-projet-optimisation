@@ -73,12 +73,20 @@ void liste_des_taches_creer(Tache *** taches)
 	const int nTaches = 5;
 	*taches = (Tache**)malloc(nTaches * sizeof(Tache));
 
-	int durees[] = { 1, 2, 3 };
-	(*taches)[0] = tache_creer(1, 1, durees, 3);
-	(*taches)[1] = tache_creer(2, 2, durees, 3);
-	(*taches)[2] = tache_creer(3, 3, durees, 3);
-	(*taches)[3] = tache_creer(4, 4, durees, 3);
-	(*taches)[4] = tache_creer(5, 5, durees, 3);
+	int durees1[] = { 3, 5, 1 };
+	(*taches)[0] = tache_creer(1, 2, durees1, 3);
+
+	int durees2[] = { 2, 2, 1 };
+	(*taches)[1] = tache_creer(2, 1, durees2, 3);
+
+	int durees3[] = { 4, 3, 2 };
+	(*taches)[2] = tache_creer(3, 4, durees3, 3);
+
+	int durees4[] = { 1, 3, 3 };
+	(*taches)[3] = tache_creer(4, 3, durees4, 3);
+	
+	int durees5[] = { 2, 2, 1 };
+	(*taches)[4] = tache_creer(5, 1, durees5, 3);
 }
 
 
